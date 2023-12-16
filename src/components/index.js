@@ -1,0 +1,5 @@
+export { default as PageLoader } from './pageLoader/PageLoader'
+export { default as School } from './school/School'
+export { default as Forex } from './forex/Forex'
+export { default as ComputerScience } from './computerScience/ComputerScience'
+export { default as SoftSkills } from './softSkills/SoftSkills'
