@@ -12,8 +12,8 @@ import { ComputerScience, Forex, School, SoftSkills } from "../../components";
 const Home = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [schoolTab, setSchoolTab] = useState(false);
-  const [forexTab, setForexTab] = useState(true);
-  const [csTab, setCsTab] = useState(false);
+  const [forexTab, setForexTab] = useState(false);
+  const [csTab, setCsTab] = useState(true);
   const [ssTab, setSsTab] = useState(false);
 
   const activeTabL = "underline decoration-wavy underline-offset-4";
@@ -55,16 +55,14 @@ const Home = () => {
       <nav className="flex items-center justify-between text-[#ffc451] bg-[rgba(0,0,0,0.8)] sm:text-lg">
         <ul className="hidden w-1/3 sm:flex justify-evenly">
           <li>
-            <button
-              className={!forexTab ? null : activeTabL}
-              onClick={handleForex}
-            >
-              Forex
+            <button className={!csTab ? null : activeTabL} onClick={handleCs}>
+              Computer Science
             </button>
           </li>
           <li>
-            <button className={!csTab ? null : activeTabL} onClick={handleCs}>
-              Computer Science
+            <button
+              className={!forexTab ? null : activeTabL} onClick={handleForex}>
+              Forex
             </button>
           </li>
         </ul>
@@ -107,17 +105,6 @@ const Home = () => {
       {toggleMenu && (
         <div className="w-full px-4 pt-4 pb-2 space-y-5 text-right text-white bg-black rounded-b-lg">
           <button
-            className={!forexTab ? noActiveTabS : activeTabS}
-            onClick={handleForex}
-          >
-            <span className="pb-2 mr-4 scale-in-hor-right">Forex</span>
-            <AiOutlineMoneyCollect
-              size={24}
-              className={!forexTab ? "white" : "text-[#ffc451]"}
-            />
-          </button>
-          <hr />
-          <button
             className={!csTab ? noActiveTabS : activeTabS}
             onClick={handleCs}
           >
@@ -127,6 +114,17 @@ const Home = () => {
             <AiOutlineLaptop
               size={24}
               className={!csTab ? "white" : "text-[#ffc451]"}
+            />
+          </button>
+          <hr />
+          <button
+            className={!forexTab ? noActiveTabS : activeTabS}
+            onClick={handleForex}
+          >
+            <span className="pb-2 mr-4 scale-in-hor-right">Forex</span>
+            <AiOutlineMoneyCollect
+              size={24}
+              className={!forexTab ? "white" : "text-[#ffc451]"}
             />
           </button>
           <hr />
