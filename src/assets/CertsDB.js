@@ -4,6 +4,7 @@ import fx1 from './fx1.png';
 import fx2 from './fx2.jpg';
 import fx3 from './fx3.jpg';
 import fx4 from './fx4.jpg';
+import fx5 from './SMC_KL.jpg';
 import cs from './cs.png';
 import cs0 from './cs0.jpg';
 import cs1 from './cs1.png';
@@ -19,49 +20,54 @@ export const SchoolCerts = [
 
 export const ForexCerts = [
   {
-    name: "bannerImage",
+    name: "FX_Intro",
     link: fx
   },
   {
-    name: "tutoriumLogo",
+    name: "ICT",
     link: fx1,
   },
   {
-    name: "blueAcademics",
+    name: "CandleSticks",
     link: fx2,
   },
   {
-    name: "tutoriumLogo",
+    name: "SMC",
     link: fx3,
   },
   {
-    name: "tutoriumLogo",
+    name: "KL",
     link: fx4,
   },
+  {
+    name: "SMC_KL",
+    link: fx5,
+  }
+
 ];
 
 export const ComputerScienceCerts = [
   {
-    name: "bannerImage",
+    name: "UI/UX",
     link: cs,
   },
   {
-    name: "tutoriumLogo",
+    name: "Networking_Into",
     link: cs0,
   },
   {
-    name: "blueAcademics",
+    name: "TailwindCSS",
     link: cs1,
   },
   {
-    name: "blueAcademics",
+    name: "Git/GitHub",
     link: cs2,
   },
 ];
 
 export const SoftSkillsCerts = [
   {
-    name: "bannerImage",
+    name: "Project Management",
     link: ss,
   },
 ];
